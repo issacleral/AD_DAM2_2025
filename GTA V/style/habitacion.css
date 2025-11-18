@@ -1,0 +1,309 @@
+html {
+    background: #2c3e50;
+    color: #ecf0f1;
+    font-family: 'Pricedown', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: radial-gradient(circle, #34495e, #2c3e50);
+    min-height: 100vh;
+}
+
+.gta-hud {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #f1c40f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.3);
+}
+
+.location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e74c3c;
+}
+
+.location-header h1 {
+    color: #f1c40f;
+    font-size: 28px;
+    margin: 0;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.wanted-level {
+    color: #e74c3c;
+    font-size: 24px;
+}
+
+.location-content {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.location-content p {
+    font-size: 18px;
+    color: #bdc3c7;
+    line-height: 1.5;
+}
+
+.location-content img {
+    max-width: 100%;
+    border: 3px solid #3498db;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.map-placeholder {
+    background: #34495e;
+    color: #95a5a6;
+    padding: 40px;
+    border: 2px dashed #7f8c8d;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.gta-nav {
+    margin: 25px 0;
+    padding: 15px;
+    background: rgba(52, 73, 94, 0.6);
+    border-radius: 8px;
+}
+
+.gta-nav h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.nav-btn {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Pricedown', Arial, sans-serif;
+    font-size: 16px;
+    text-shadow: 1px 1px 0 #000;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: left;
+}
+
+.nav-btn:hover {
+    background: linear-gradient(45deg, #3cb0fd, #3498db);
+    transform: translateX(5px);
+}
+
+.gta-codes {
+    margin: 25px 0;
+    padding: 15px;
+    background: rgba(231, 76, 60, 0.1);
+    border-radius: 8px;
+    border: 1px solid #e74c3c;
+}
+
+.gta-codes h3 {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.gta-codes form {
+    margin: 15px 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.gta-codes label {
+    display: block;
+    margin-bottom: 8px;
+    color: #f1c40f;
+    font-size: 18px;
+}
+
+.gta-codes input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    background: #2c3e50;
+    color: #f1c40f;
+    border: 2px solid #f1c40f;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Pricedown', Arial, sans-serif;
+    margin: 0 10px;
+    width: 80px;
+}
+
+.gta-codes input[type="text"]::placeholder {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.code-btn {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Pricedown', Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.code-btn:hover {
+    background: linear-gradient(45deg, #ff6b6b, #e74c3c);
+}
+
+.no-codes {
+    color: #95a5a6;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+}
+
+.mission-passed {
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+    color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid #f1c40f;
+    animation: pulse-gold 2s infinite;
+}
+
+.mission-passed h2 {
+    font-size: 32px;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.mission-passed p {
+    font-size: 20px;
+    margin: 0;
+    color: #ecf0f1;
+}
+
+.reward {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #f1c40f;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.completion-message {
+    font-size: 18px;
+    color: #f1c40f;
+    margin-top: 15px;
+    text-shadow: 1px 1px 0 #000;
+}
+
+@keyframes pulse-gold {
+    0% { 
+        box-shadow: 0 0 20px rgba(241, 196, 15, 0.5);
+        transform: scale(1);
+    }
+    50% { 
+        box-shadow: 0 0 40px rgba(241, 196, 15, 0.8);
+        transform: scale(1.02);
+    }
+    100% { 
+        box-shadow: 0 0 20px rgba(241, 196, 15, 0.5);
+        transform: scale(1);
+    }
+}
+
+.gta-restart {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+}
+
+.restart-btn {
+    background: linear-gradient(45deg, #e67e22, #d35400);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Pricedown', Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.restart-btn:hover {
+    background: linear-gradient(45deg, #f39c12, #e67e22);
+}
+
+.codes-completed {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(39, 174, 96, 0.2);
+    border: 1px solid #27ae60;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.codes-completed h4 {
+    color: #27ae60;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.completed-code {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.audio-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.gta-audio {
+    width: 90%;
+    max-width: 400px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #f1c40f;
+    border-radius: 10px;
+    outline: none;
+}
+
+.audio-note {
+    color: #f1c40f;
+    font-size: 16px;
+    margin-top: 15px;
+    text-shadow: 1px 1px 0 #000;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
