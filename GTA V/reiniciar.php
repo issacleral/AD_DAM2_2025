@@ -10,7 +10,7 @@ session_destroy();
     <title>Misión Reiniciada</title>
 </head>
 <body>
-    <video style="width: 100%;" src="video/gtav_1.mp4" autoplay muted loop></video>
+    <video src="video/gtav_1.mp4" autoplay muted loop></video>
     <script>
         setTimeout(() => {
             window.location.href = 'index.php';
